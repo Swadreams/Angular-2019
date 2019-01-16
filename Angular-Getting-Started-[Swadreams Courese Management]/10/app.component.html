@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div style="text-align:center">
+  <h1>
+    Welcome to {{ title }} app!
+  </h1>  
+  <cm-courses></cm-courses>
+</div>
+
+<div>
+  <h1> {{pageTitle}} </h1>
+  <cm-courses></cm-courses>
+</div> -->
+
+<nav class="navbar navbar-expand navbar-light bg-light">
+  <a class="navbar-brand"> 
+    {{pageTitle}}
+  </a>
+  <ul class="nav nav-pills">
+    <li><a class="nav-link" [routerLink]="['/welcome']"> Home </a></li>
+    <li><a class="nav-link" [routerLink]="['/courses']"> Courses List </a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

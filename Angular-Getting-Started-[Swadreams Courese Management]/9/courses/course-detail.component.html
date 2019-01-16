@@ -1,0 +1,28 @@
+<div class="card" *ngIf="course">
+  <div class="card-header">
+    {{pageTitle + ': ' + course.courseName}}
+  </div>
+</div>
+
+<!-- <div class="col-md-6">
+  <div class="row">
+    <div class="col-md-3">Name: </div>
+    <div class="col-md-6">{{course?.courseName}}</div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">Code: </div>
+    <div class="col-md-6">{{course?.courseCode}}</div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">Description: </div>
+    <div class="col-md-6">{{course?.description}}</div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">Availability: </div>
+    <div class="col-md-6">{{course?.nextBatchDate}}</div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">Price: </div>
+    <div class="col-md-6">{{course?.price | currency: 'INR':true}}</div>
+  </div>
+</div> -->
